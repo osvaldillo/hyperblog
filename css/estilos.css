@@ -2,21 +2,20 @@ body{
     background-color: wheat;
 }
 
-h1{
+th{
     color: blue;
     text-align: center;
     font-family: Arial;
+    border-style: solid;
 }
-h2{
-    color: blue;
-    text-align: center;
-    font-family: Arial;
-}
-p{
+
+td{
     font-size: larger;
     font-family: Helvetica;
     color: royalblue;
+    border-style: solid;
 }
+
  i{
     color: blue;
  }
@@ -28,3 +27,4 @@ p{
      font-size: 10;
      color: hotpink;
  }  
+

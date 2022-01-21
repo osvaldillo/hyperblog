@@ -1,39 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>Mis apuntes de git</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Git init</h1>
-    <p>Es el comando que sirve para invocar la aparición de un nuevo repositorio.<br> Es la carpeta en la que están los archivos de tu proyecto.</p>
-    <p>Al abrir la terminal y ejecutar  "git init", indicamos que esta es la carpeta central de los archivos.</p><p>Cuando ejecutamos este comando, además, creamos:</p><ul>
-        <li>Staging: Es el área en la memoria RAM donde se irán agregando los cambios temporalmente</li>
-        <li>Repository(repositorio/master) Es el directorio que conocemos como /.git/, lugar en el que se guardan todos los cambios en disco duro <b>(la carpeta es un elemento oculto en el explorador de archivos) </b></li>
-    </ul>
-    <h2>git config --global</h2>
-
-    <p>... user.name >>Nombre del creador de la versión<<: Es el comando para determinar el creador o de alguno de los editores dentro del repositorio</p>
-    <p>...user.email >>Correo electrónico del creador<<: Es el comando para determinar el Correo electrónico de alguno de los editores dentro del repositorio</p>
-    <h2>git add</h2>
-    <p>... >>Nombre del archivo de texto plano.extension<< Esta funcion almacena los cambios de un archivo determinado en el "staging" y lo prepara para almacenarlo en el repositorio. <i>Si el nombre de archivo se sustituye por un punto (.), se guardarán todos los cambios hechos en los todos archivos</i></p>
-    <h2>git rm --cached >>nombre del archivo<<</h2>
-    <p>Es el inverso de la funcion add, es decir, elimina un archivo determinado del staging</p>
-    <h2>git commit </h2>
-    <p>...-m ">mensaje o comentario acerca de la version entre comillas<": almacena el archivo en el repositorio como una nueva versión, transfiriendolo del staging al repository.</p>
-    <h2>git status</h2>
-    <p>Nos muestra el estatus de nuestro proyecto, así como los cambios que necesitan ser actualizados</p>
-    <h2>git log --stat</h2>
-    <p>Nos muestra los cambios específicos de cada commit desde el más reciente hasta el más antiguo</p>
-    <h2>git show</h2>
-    <p>... >>archivo.extension<< Muestra los cambios hechos al archivo en el último commit</p>
-    <h2>git dif</h2>
-    <p>Muestra las diferencias entre los cambios que está en Stangig y los que aun no se han añadido</p>
-    <p>     ...#commit1 #commit2: Muestra la diferenciia entre dos versiones de los commits</p>
-    <h2>git reset</h2>
-    <p>... #commit --soft: devuelve la versión de un commit especificado sin borrar los demás commits</p>
-    <p>... #commit --hard: devuelve la versión de un commit especificado borrando los demás commits anteriores al commit especificado</p>
+                      
+                       
+    <table border="3" border-style="solid">
+        <tr>
+            <th>Nombre del comando</th>
+            <th>Atributo(ocional)</th>
+            <th>Descripción</th>
+        </tr>
+        
+        <tr>
+            <td>git init</td>
+            <td>No tiene</td>
+            <td>Es el comando que sirve para invocar la aparición de un nuevo repositorio.
+                <br> Es la carpeta en la que están los archivos de tu proyecto.
+                <br>Al abrir la terminal y ejecutar  "git init", indicamos que esta es la carpeta central de los archivos.
+                <ul>
+                    <li>Staging: Es el área en la memoria RAM donde se irán agregando los cambios temporalmente</li>
+                    <li>Repository(repositorio/master) Es el directorio que conocemos como /.git/, lugar en el que se guardan todos los cambios en disco duro <b>(la carpeta es un elemento oculto en el explorador de archivos) </b></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>git config --global</td>
+            <td>user.name >>Nombre del creador de la versión<<
+            <br><br>user.email >>Correo electrónico del creador<<</td>
+            <td>Es el comando para determinar el creador o de alguno de los editores dentro del repositorio 
+                <br><br><br>Es el comando para determinar el Correo electrónico de alguno de los editores dentro del repositorio</td>
+        </tr>
+        <tr>
+            <td>git add</td>
+            <td>>>Nombre del archivo de texto plano.extension<<</td>
+            <td>Esta funcion almacena los cambios de un archivo determinado en el "staging" y lo prepara para almacenarlo en el repositorio. <i>Si el nombre de archivo se sustituye por un punto (.), se guardarán todos los cambios hechos en los todos archivos</i></td>
+        </tr>
+        <tr>
+            <td>git rm</td>
+            <td>--cached >>nombre del archivo<<</td>
+            <td>Es el inverso de la funcion add, es decir, elimina un archivo determinado del staging</td>
+        </tr>
     
+        <tr>
+            <td>git commit</td>
+            <td> -m ">mensaje o comentario acerca de la version entre comillas<"</td>
+            <td>almacena el archivo en el repositorio como una nueva versión, transfiriendolo del staging al repository.</td>
+        </tr>
+    
+        <tr>
+            <td>git status</td>
+            <td>No tiene</td>
+            <td>Nos muestra el estatus de nuestro proyecto, así como los cambios que necesitan ser actualizados</td>
+        </tr>
+        
+        <tr>
+            <td>git log</td>
+            <td> "vacío"<br><br>--stat</td>
+            <td>Nos muestra los cambios generales de cada commit desde el más reciente hasta el más antiguo<br>
+                <br>Nos muestra los cambios específicos de cada commit desde el más reciente hasta el más antiguo
+            </td>
+        </tr>
+    
+        <tr>
+            <td>git show</td>
+            <td>>>archivo.extension<<</td>
+            <td>Muestra los cambios hechos al archivo en el último commit</td>
+        </tr>
+        <tr>
+            <td>git diff</td>
+            <td>
+                "Vacío"<br>
+                <br>#commit1 #commit2
+            </td>
+            <td>
+                Muestra las diferencias entre los cambios que está en Stangig y los que aun no se han añadido<br>
+                <br>Muestra la diferenciia entre dos versiones de los commits
+            </td>
+        </tr>
+        <tr>
+            <td>git reset</td>
+            <td>#commit --soft<br>
+                <br>#commit --hard
+            </td>
+            <td>
+                devuelve la versión de un commit especificado sin borrar los demás commits<br>
+                <br>devuelve la versión de un commit especificado borrando los demás commits anteriores al commit especificado
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
 </body>
 </html>
