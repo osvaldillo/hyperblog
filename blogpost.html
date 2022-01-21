@@ -16,6 +16,24 @@
     <p>... user.name >>Nombre del creador de la versión<<: Es el comando para determinar el creador o de alguno de los editores dentro del repositorio</p>
     <p>...user.email >>Correo electrónico del creador<<: Es el comando para determinar el Correo electrónico de alguno de los editores dentro del repositorio</p>
     <h2>git add</h2>
-    <p>... >>Nombre del archivo de texto plano.extension<< Esta funcion almacena los cambios de un archivo determinado en el "staging" y lo prepara para almacenarlo en el repositorio. <i>Si el nombre de archivo se sustituye por un punto (.), se guardarán todos los cambios hechos en los todos archivos</i></p>    
+    <p>... >>Nombre del archivo de texto plano.extension<< Esta funcion almacena los cambios de un archivo determinado en el "staging" y lo prepara para almacenarlo en el repositorio. <i>Si el nombre de archivo se sustituye por un punto (.), se guardarán todos los cambios hechos en los todos archivos</i></p>
+    <h2>git rm --cached >>nombre del archivo<<</h2>
+    <p>Es el inverso de la funcion add, es decir, elimina un archivo determinado del staging</p>
+    <h2>git commit </h2>
+    <p>...-m ">mensaje o comentario acerca de la version entre comillas<": almacena el archivo en el repositorio como una nueva versión, transfiriendolo del staging al repository.</p>
+    <h2>git status</h2>
+    <p>Nos muestra el estatus de nuestro proyecto, así como los cambios que necesitan ser actualizados</p>
+    <h2>git log --stat</h2>
+    <p>Nos muestra los cambios específicos de cada commit desde el más reciente hasta el más antiguo</p>
+    <h2>git show</h2>
+    <p>... >>archivo.extension<< Muestra los cambios hechos al archivo en el último commit</p>
+    <h2>git dif</h2>
+    <p>Muestra las diferencias entre los cambios que está en Stangig y los que aun no se han añadido</p>
+    <p>     ...#commit1 #commit2: Muestra la diferenciia entre dos versiones de los commits</p>
+    <h2>git reset</h2>
+    <p>... #commit --soft: devuelve la versión de un commit especificado sin borrar los demás commits</p>
+    <p>... #commit --hard: devuelve la versión de un commit especificado borrando los demás commits anteriores al commit especificado</p>
+    
+
 </body>
 </html>
