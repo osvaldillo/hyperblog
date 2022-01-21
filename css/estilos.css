@@ -1,7 +1,11 @@
 body{
     background-color: wheat;
 }
-
+caption{
+    font-size: xx-large;
+    font-family: cursive;
+    color: black;
+}
 th{
     color: blue;
     text-align: center;
