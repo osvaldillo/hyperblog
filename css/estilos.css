@@ -3,3 +3,11 @@ body{
     text-align: center;
     font-family: Arial;
 }
+
+p{
+    font-size: larger;
+    font-family: Helvetica;
+    font-style: italic;
+    color: royalblue;
+}
+
