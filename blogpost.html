@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Título</title>
+    <title>Mis apuntes de git</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Blogpost</h1>
-    <p>Párrafo de inicio</p>
+    <h1>Git init</h1>
+    <p>Es el comando que sirve para invocar la aparición de un nuevo repositorio.<br> Es la carpeta en la que están los archivos de tu proyecto.</p>
+    <p>Al abrir la terminal y ejecutar  "git init", indicamos que esta es la carpeta central de los archivos.</p><p>Cuando ejecutamos este comando, además, creamos:</p><ul>
+        <li>Staging: Es el área en la memoria RAM donde se irán agregando los cambios temporalmente</li>
+        <li>Repository(repositorio/master) Es el directorio que conocemos como /.git/, lugar en el que se guardan todos los cambios en disco duro <b>(la carpeta es un elemento oculto en el explorador de archivos) </b></li>
+    </ul>
+    <h2>git config --global</h2>
 
-    
+    <p>... user.name >>Nombre del creador de la versión<<: Es el comando para determinar el creador o de alguno de los editores dentro del repositorio</p>
+    <p>...user.email >>Correo electrónico del creador<<: Es el comando para determinar el Correo electrónico de alguno de los editores dentro del repositorio</p>
+    <h2>git add</h2>
+    <p>... >>Nombre del archivo de texto plano.extension<< Esta funcion almacena los cambios de un archivo determinado en el "staging" y lo prepara para almacenarlo en el repositorio. <i>Si el nombre de archivo se sustituye por un punto (.), se guardarán todos los cambios hechos en los todos archivos</i></p>    
 </body>
 </html>

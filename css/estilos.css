@@ -1,13 +1,30 @@
 body{
-    color: deeppink;
+    background-color: wheat;
+}
+
+h1{
+    color: blue;
     text-align: center;
     font-family: Arial;
 }
-
+h2{
+    color: blue;
+    text-align: center;
+    font-family: Arial;
+}
 p{
     font-size: larger;
     font-family: Helvetica;
-    font-style: italic;
     color: royalblue;
 }
+ i{
+    color: blue;
+ }
 
+ b{
+     font-family: Cambria;
+ }
+ li{
+     font-size: 10;
+     color: hotpink;
+ }  
